@@ -8,10 +8,10 @@ const Product = ({item}) => {
  
   return (
 
-    <Stack data-cy="product" boxShadow= {"rgba(0, 0, 0, 0.1) 0px 4px 12px"} padding={40}>
+    <Stack data-cy="product" boxShadow= {"rgba(0, 0, 0, 0.1) 0px 4px 12px"} padding={10}>
      
-           <Image data-cy="product-image" src={item.img} alt={item.category} maxWidth={200}/>
-      <Tag display={"flex"} justifyContent={"space-between"}>
+           <Image data-cy="product-image" src={item.img} alt={item.category} maxWidth={80}/>
+      <Tag display={"flex"} justifyContent={"space-between"} margin={0}>
       <Text data-cy="product-category"color={"blue"}> {item.category.toUpperCase()}</Text>
         <TagLabel data-cy= "product-brand"color={"blue"} background={"aqua"} >{item.brand.toUpperCase()}</TagLabel>
       </Tag>
